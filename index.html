@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/6172984c6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <input type="text" class="search-bar" placeholder="Search">
+    </div>
+    <nav class="navbar-right">
+      <a href="#"><i class="fas fa-home"></i> Home</a>
+      <a href="#"><i class="fas fa-user-friends"></i> My Network</a>
+      <a href="#"><i class="fas fa-briefcase"></i> Jobs</a>
+      <a href="#"><i class="fas fa-comment-dots"></i> Messaging</a>
+      <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+      <a href="#"><i class="fas fa-user-circle"></i> Me</a>
+      <a href="#"><i class="fas fa-building"></i> For Business</a>
+      <a href="#" class="premium-link"><i class="fas fa-star"></i> Try Premium for free</a>
+    </nav>
+  </header>
+
+  <!-- Page Layout -->
+  <div class="container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="ASSETS/persona.webp" alt="Profile Picture" class="profile-pic">
+        <h3>NSABIMANA Issa</h3>
+        <p>Passion-driven software developer | Problem solver | In love with JavaScript</p>
+      </div>
+      <div class="my-items">
+        <h4>My Items</h4>
+        <p>KHills Team</p>
+        <button>See visitor analytics</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="post-box">
+        <div class="post-header">
+          <img src="ASSETS/persona.webp" alt="Profile Picture" class="post-profile-pic">
+          <h3>Start a Post</h3>
+        </div>
+        <div class="options">
+          <button class="btn photo-btn"><i class="fas fa-camera"></i> Photo</button>
+          <button class="btn video-btn"><i class="fas fa-video"></i> Video</button>
+          <button class="btn job-btn"><i class="fas fa-briefcase"></i> Job</button>
+          <button class="btn article-btn"><i class="fas fa-edit"></i> Write article</button>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <img src="ASSETS/persona.webp" alt="Profile Picture" class="post-profile-pic">
+          <div class="post-info">
+            <h4>Youssouf Ntwali <span class="post-follow-status">• Following</span></h4>
+            <p>Co-Founder, CEO at BAG</p>
+            <p class="post-time">1d</p>
+          </div>
+        </div>
+        <div class="post-content">
+          <p>
+            Last week, I had the pleasure to represent BAG at the 2023 Forbes 30 Under 30 Africa Summit in Gaborone, Botswana 🇧🇼 with my friends
+            <a href="#">Albert Munyabugingo</a>, <a href="#">BISEMACE</a>, and <a href="#">Yves Honore</a>.
+          </p>
+        </div>
+        <div class="post-images">
+          <img src="ASSETS/pexels-yama-624367.jpg" alt="Forbes Event">
+          <img src="ASSETS/crowd.webp" alt="Forbes Event">
+          <img src="ASSETS/Road_p.jpeg" alt="Forbes Event">
+          <img src="ASSETS/onDevices.webp" alt="Forbes Event">
+          <div class="extra-image">
+            <span>+1</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+      <h4>Add to Your Feed</h4>
+      <ul>
+        <li><a href="#">AEM Community</a></li>
+        <li><a href="#">Alain Ngabo Kamanda</a></li>
+        <li><a href="#">Ngabe Rutegarama</a></li>
+      </ul>
+      <div class="ad">
+        <p>See who's hiring on LinkedIn</p>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

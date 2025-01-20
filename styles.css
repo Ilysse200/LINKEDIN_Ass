@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f2ef;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #283e4a;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.fa-linkedin {
+  height: 45px;
+  margin-right: 8px;
+  align-items: center;
+  padding-top: 23px;
+}
+
+.search-bar {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.navbar-right a {
+  display: inline-flex;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.navbar-right a i {
+  display: flexbox;
+  flex-direction: column;
+  gap: 3px;
+  margin-right: 5px;
+}
+
+.premium-link {
+  color: #ffc107;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.my-items button {
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-box {
+  margin-bottom: 20px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.options .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.photo-btn { background-color: #0073b1; }
+.video-btn { background-color: #00a400; }
+.job-btn { background-color: #a020f0; }
+.article-btn { background-color: #e04f1a; }
+
+.post-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 0; /* Removes the gap between images */
+  margin-top: 10px;
+}
+
+.post-images img {
+  width: 100%; /* Ensures images fill the grid cell */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px;
+  object-fit: cover; /* Ensures images are cropped properly within their cells */
+}
+
+.extra-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  position: relative; /* Enables positioning */
+  grid-column: span 2; /* Optional: Make the overlay cover the entire last row if needed */
+}
+
+.extra-image span {
+  position: absolute;
+  z-index: 1;
+}
+
+/* .post-images img + .extra-image {
+  position: absolute; /* Ensures "+1" overlay is placed over the last image 
+  top: 0;
+  left: 0;
+  width: 100%;  Covers the entire image 
+  height: 100%; Matches the size of the image 
+  border-radius: 8px; /* Matches the image corner radius 
+} */

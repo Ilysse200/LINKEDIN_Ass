@@ -38,6 +38,7 @@ body {
 
 .navbar-right a {
   display: inline-flex;
+  flex-direction: column;
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
@@ -46,10 +47,10 @@ body {
 }
 
 .navbar-right a i {
-  display: flexbox;
-  flex-direction: column;
-  gap: 3px;
-  margin-right: 5px;
+  /* display: flexbox; */
+  margin: 0; /* Remove unnecessary margin */
+  font-size: 20px; /* Adjust icon size if needed */
+  gap: 3;
 }
 
 .premium-link {
@@ -69,13 +70,16 @@ body {
   text-align: left;
 }
 .my-items a{
-  position: fixed;
+  /* position: fixed; */
+  display: flex;
+  flex-direction: row;
+  
 }
-.my-items i h4{
+/* .my-items i h4{
   display: inline-flex;
-  /* flex-direction: row; */
+  /* flex-direction: row; 
   gap: -4px;
-}
+} */
 
 .items-link {
   text-decoration: none;
